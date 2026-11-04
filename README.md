@@ -29,7 +29,7 @@
 "msg": "deb"
 ```
 
-![1_3](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_3.png)
+![1_4](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_4.png)
 
 5. Добавить факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 6.  Повторить запуск playbook на окружении `prod.yml`. Убедиться, что выдаются корректные значения для всех хостов.
@@ -38,7 +38,7 @@
 
 7. При помощи `ansible-vault` зашифровать факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 
-![1_5](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_5.png)
+![1_7](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_7.png)
 
 8. Запустить playbook на окружении `prod.yml`. При запуске `ansible` должен запросить пароль. Убедиться в работоспособности.
 
