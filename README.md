@@ -34,7 +34,7 @@
 5. Добавить факты в `group_vars` каждой из групп хостов так, чтобы для `some_fact` получились значения: для `deb` — `deb default fact`, для `el` — `el default fact`.
 6.  Повторить запуск playbook на окружении `prod.yml`. Убедиться, что выдаются корректные значения для всех хостов.
 
-![1_4](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_4.png)
+![1_6](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_6.png)
 
 7. При помощи `ansible-vault` зашифровать факты в `group_vars/deb` и `group_vars/el` с паролем `netology`.
 
@@ -42,7 +42,7 @@
 
 8. Запустить playbook на окружении `prod.yml`. При запуске `ansible` должен запросить пароль. Убедиться в работоспособности.
 
-![1_6](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_6.png)
+![1_8](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_8.png)
 
 9. Посмотреть при помощи `ansible-doc` список плагинов для подключения. Выберать подходящий для работы на `control node`.
 ```
@@ -52,11 +52,11 @@ CONNECTION ansible.builtin.local (/usr/lib/python3/dist-packages/ansible/plugins
 ```
 10. В `prod.yml` добавить новую группу хостов с именем  `local`, в ней разместить localhost с необходимым типом подключения.
 
-![1_7](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_7.png)
+![1_10](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_10.png)
 
 11. Запустить playbook на окружении `prod.yml`. При запуске `ansible` должен запросить пароль. Убедиться, что факты `some_fact` для каждого из хостов определены из верных `group_vars`.
 
-![1_8](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_8.png)
+![1_11](https://github.com/expgt/net-fops-hw-16-1/blob/main/16_1_1_11.png)
 
 12. Заполнить `README.md` ответами на вопросы. Сделать `git push` в ветку `main`. В ответе отправить ссылку на открытый репозиторий с изменённым `playbook` и заполненным `README.md`.
 13. Предоставить скриншоты результатов запуска команд.
